@@ -1,0 +1,7 @@
+html {
+    background-image: url("2.jpg");
+    height: 100%; 
+    background-position: center;
+   /* background-repeat:repeat; */
+    background-size:cover;
+}
