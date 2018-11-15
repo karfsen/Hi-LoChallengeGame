@@ -49,6 +49,7 @@ function switchCard()
         break;
     case 13:
 
+    
         break;
     default: text="No such a value found"
   }
