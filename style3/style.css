@@ -1,0 +1,23 @@
+td {
+    font-family:FrankRuehl;
+    font-size: 30px;
+}
+#Registration {
+    padding: 200px 0px 0px 0px ;
+    font-family: FrankRuehl;
+    font-weight: 200;
+    width: 400px;
+    text-align: center;
+   margin: 0 auto;
+    font-size: 40px;     
+    color: black;
+    color: white;
+}
+html {
+    background-image: url("1.jpeg");
+    height: 100%; 
+    background-position: center;
+   /* background-repeat:repeat; */
+    background-size:cover;
+    color: white;
+}
