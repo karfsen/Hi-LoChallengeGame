@@ -7,6 +7,7 @@ function randomCard()
     console.log(" result is " +num);
 }
 
+
 function switchCard()
 {
   switch (num)
@@ -49,7 +50,7 @@ function switchCard()
         break;
     case 13:
 
-    
+
         break;
     default: text="No such a value found"
   }

@@ -2,6 +2,7 @@
 //let bet=true/false;
 //let money=100;
 
+
 function moneyInc()
 {
   if((bet)==true)
