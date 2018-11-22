@@ -1,0 +1,65 @@
+div {
+  
+  text-align: center;
+
+}
+img {
+
+  border-radius: 50%;
+  width: 350px;
+  height:250px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+}
+body{
+
+background-color: green;
+
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+
+}
+
+li {
+
+    float: left;
+    border-right:1px solid black;
+}
+
+li {
+
+    border-right: none;
+
+}
+
+li a {
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+
+    background-color: orange;
+
+}
+
+.active {
+
+    background-color: orange;
+
+}
