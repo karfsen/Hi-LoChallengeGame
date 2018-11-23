@@ -4,7 +4,6 @@ $(document).ready(function() {
 
 function switchCard()
 {
-  console.log("breakpoint");
   num = randomCard();
   switch (num)
   {
