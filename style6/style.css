@@ -1,0 +1,15 @@
+html {
+ background-image:url("1.jpg");
+ height:100%;
+ background-size:cover;
+ color: white;
+   font-family:FrankRuehl;
+   font-size: 20px;
+}
+table {
+  text-align: center;
+  height: 500px;
+  width: 500px;
+
+
+}
