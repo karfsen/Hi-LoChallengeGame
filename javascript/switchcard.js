@@ -5,6 +5,7 @@ $(document).ready(function() {
 function switchCard()
 {
   num = randomCard();
+  let num1=num;
   switch (num)
   {
     case 1:
