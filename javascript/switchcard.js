@@ -5,60 +5,317 @@ $(document).ready(function() {
 function switchCard()
 {
   num = randomCard();
-  let num1=num;
+  num1= randomCardColor();
   switch (num)
   {
     case 1:
-    document.getElementById("card").innerHTML="<img src=\"images/1.jpg\" width=\"300\" height=\"500\">";
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/AC.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/AD.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/AH.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/AS.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+      break;
+
     case 2:
-    document.getElementById("card").innerHTML="<img src=\"images/2.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/2C.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/2H.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/2D.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/2S.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+
+    }
+      break;
+
     case 3:
-    document.getElementById("card").innerHTML="<img src=\"images/3.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/3S.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/3H.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/3D.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/3C.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+
+      break;
+
     case 4:
-    document.getElementById("card").innerHTML="<img src=\"images/4.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/4C.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/4D.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/4H.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/4S.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+
+      break;
+
     case 5:
-    document.getElementById("card").innerHTML="<img src=\"images/5.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/5C.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/5D.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/5H.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/5S.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+
+      break;
+
     case 6:
-    document.getElementById("card").innerHTML="<img src=\"images/6.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/6C.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/6D.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/6H.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/6S.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+
+      break;
+
     case 7:
-    document.getElementById("card").innerHTML="<img src=\"images/7.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/7C.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/7D.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/7H.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/7S.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+
+      break;
+
     case 8:
-    document.getElementById("card").innerHTML="<img src=\"images/8.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/8C.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/8H.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/8D.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/8S.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+
+      break;
     case 9:
-    document.getElementById("card").innerHTML="<img src=\"images/9.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/9C.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/9H.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/9D.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/9S.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+
+      break;
+
     case 10:
-    document.getElementById("card").innerHTML="<img src=\"images/10.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/10C.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/10S.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/10H.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/10D.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+
+      break;
+
     case 11:
-    document.getElementById("card").innerHTML="<img src=\"images/11.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/JC.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/JD.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/JH.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/JS.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+
+      break;
     case 12:
-    document.getElementById("card").innerHTML="<img src=\"images/12.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/QS.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/QD.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/QH.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/QC.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+
+      break;
+
     case 13:
-    document.getElementById("card").innerHTML="<img src=\"images/13.jpg\" width=\"300\" height=\"500\">";
-
+    switch (num1)
+    {
+        case 1:
+          document.getElementById("card").innerHTML="<img src=\"style7/KS.png\" width=\"300\" height=\"500\">";
         break;
+
+        case 2:
+          document.getElementById("card").innerHTML="<img src=\"style7/KC.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 3:
+          document.getElementById("card").innerHTML="<img src=\"style7/KH.png\" width=\"300\" height=\"500\">";
+        break;
+
+        case 4:
+          document.getElementById("card").innerHTML="<img src=\"style7/KD.png\" width=\"300\" height=\"500\">";
+        break;
+
+        default: text="No such a value found"
+    }
+
+      break;
     default: text="No such a value found"
   }
 }
