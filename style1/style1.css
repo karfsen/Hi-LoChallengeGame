@@ -5,5 +5,39 @@ html {
     background-position: center;
    /* background-repeat:repeat; */
     background-size:cover;
-    
+    color: white;
+    font-family:FrankRuehl;
+
+
+}
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+
+  border-bottom:  80px solid red;
+
+
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+
+  border-top: 80px solid red;
+}
+.class {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+button {
+  background: black;
+  margin: 50px;
+}
+table {
+  text-align: center;
 }
