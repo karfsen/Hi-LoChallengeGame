@@ -1,6 +1,7 @@
 html {
 
-    background-image: url("2.jpg");
+  /*  background-image: url("2.jpg"); */
+  background-color: black;
     height: 100%;
     background-position: center;
    /* background-repeat:repeat; */

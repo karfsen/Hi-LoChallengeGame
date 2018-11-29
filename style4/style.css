@@ -1,0 +1,74 @@
+#image {
+    border-radius: 10%;
+    width: 50px;
+    height:50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+div {
+
+  text-align: center;
+
+}
+.img-authors  {
+
+  border-radius: 50%;
+  width: 350px;
+  height:250px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+body{
+
+background-color: black;
+
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+
+}
+
+li {
+
+    float: left;
+    border-right:1px solid black;
+}
+
+li {
+
+    border-right: none;
+
+}
+
+li a {
+
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+
+    background-color: silver;
+
+}
+
+.active {
+
+    background-color: silver;
+
+}
+p {
+  color: white;
+}
