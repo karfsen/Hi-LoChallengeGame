@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style3/style.css">
-    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
-    <title>UserNames</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style3/style.css">
+  <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+  <title>UserNames</title>
 
-  </head>
+</head>
 
-  <body>
-    <audio controls autoplay>
-      <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
-    </audio>
-    <table border="0" width="400" align="center">
-     <h1 id="Registration">Registration</h1>
-      <tbody>
-        <tr>
-          <td>Name:</td>
-          <td><input type="text" name="firstname" placeholder="Player 1"></td>
-        </tr>
+<body>
+  <audio controls autoplay>
+    <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
+  </audio>
+  <!-- <table border="0" width="400" align="center"> -->
+  <div class="row">
+    <h1 id="Registration">Registration</h1>
 
-  </tbody>
+  </div>
+  <!-- <tbody>
+      <tr> -->
+  <!-- <td> -->
+  <div class="row">
+    <div class="col-4 name-form">
+      Name:
+    </div> <!-- </td> -->
+    <!-- <td> -->
+    <div class="col-4 name-form">
+      <input type="text" name="firstname" placeholder="Player 1">
+    </div> <!-- </td> -->
+  </div>
+  <!-- </td> -->
+  <!-- </tr>
+    </tbody> -->
 
-    </table>
-       <div class="outer">
-            <button class="mainMenuButton" onclick="location.href='game.html'">PLAY</button>
-
-  </body>
+  <!-- </table> -->
+  <div class="outer">
+    <button class="mainMenuButton" onclick="location.href='game.html'">PLAY</button>
+  </div>
+</body>
 
 </html>
