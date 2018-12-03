@@ -5,9 +5,11 @@
 
 function moneyInc()
 {
+
   if((bet)==true)
     money=money*2;
   else
     money=0;
   console.log("money are at " +money+"$");
+
 }

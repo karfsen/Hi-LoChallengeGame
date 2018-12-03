@@ -17,11 +17,20 @@
       </script>
 
     <!--Sasha-->
+
     <script src="javascript/PcCard.js" charset="utf-8">
     </script>
     <script src="javascript/arrow-up.js" charset="utf-8">
     </script>
     <script src="javascript/arrow-down.js" charset="utf-8">
+    </script>
+
+    <script>
+
+        window.onload = function() {
+            switchCard();
+        };
+
     </script>
 
 
@@ -32,7 +41,7 @@
 <body>
 
   <!-- Create by Saska and Roman -->
-  <div class="class" onclick="switchCard()" id="card"><img src="card_back.jpg" width="300" height="500" align="left" ></div>
+  <div class="class" id="card"><img src="card_back.jpg" width="300" height="500" align="left" ></div>
 
   <div class="class" align="center">
         <button><div onclick="Up()" class="arrow-up"></div></button><br>
