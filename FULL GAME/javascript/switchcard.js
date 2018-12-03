@@ -6,6 +6,7 @@ function switchCard()
 {
   num = randomCard();
   num1= randomCardColor();
+
   switch (num)
   {
     case 1:
