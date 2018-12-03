@@ -319,4 +319,5 @@ function switchCard()
       break;
     default: text="No such a value found"
   }
+  return num1;
 }
