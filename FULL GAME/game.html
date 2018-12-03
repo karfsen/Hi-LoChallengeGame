@@ -16,6 +16,14 @@
       <script src="javascript/randomcard.js" charset="utf-8">
       </script>
 
+    <!--Sasha-->
+    <script src="javascript/PcCard.js" charset="utf-8">
+    </script>
+    <script src="javascript/arrow-up.js" charset="utf-8">
+    </script>
+    <script src="javascript/arrow-down.js" charset="utf-8">
+    </script>
+
 
         <title>Game</title>
 
@@ -27,8 +35,8 @@
   <div class="class" onclick="switchCard()" id="card"><img src="card_back.jpg" width="300" height="500" align="left" ></div>
 
   <div class="class" align="center">
-        <button><div class="arrow-up"></div></button><br>
-        <button><div class="arrow-down" ></div></button>
+        <button><div onclick="Up()" class="arrow-up"></div></button><br>
+        <button><div onclick="Down()" class="arrow-down" ></div></button>
         <br>
         <h1>Acount info</h1>
         <table border="5" cellspacing="5" cellpadding="5" >
@@ -48,7 +56,13 @@
     </table>
     </div>
 
-  <div  onclick="switchCard()" id="card"><img src="style1/1.jpg" width="300" height="500" align="right" ></div>
+  <div  onclick="PcSwitchCard()" id="card1"><img src="card_back.jpg" width="300" height="500" align="right" ></div>
+
+    <script>
+
+
+        
+    </script>
 
 
 </body>
