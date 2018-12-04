@@ -3,14 +3,12 @@ $(document).ready(function() {
 });
 function up()
 {
-
-    if(num>card){
-        alert('You win!');
-        return 1;
+  PcSwitchCard();
+    if(card>num){
+        moneyInc();
+        console.log("money are at " +money+"$");
     }
     else{
         alert('You lose!');
-        return 0;
     }
-
 }
