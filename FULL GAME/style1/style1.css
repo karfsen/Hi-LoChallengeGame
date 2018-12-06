@@ -35,6 +35,9 @@ html {
     width: 33.33%;
     padding: 5px;
 }
+img{
+  border-radius: 10%;
+}
 button {
   background: black;
   margin: 50px;

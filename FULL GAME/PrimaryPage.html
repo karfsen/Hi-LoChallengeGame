@@ -3,37 +3,110 @@
 
 <head>
 
-    <meta charset="utf-8">
-        <title>Page</title>
-             <link rel="stylesheet" href="style4/style.css">
+  <meta charset="utf-8">
+  <title>Page</title>
+  <link rel="stylesheet" href="style4/style.css">
 
-             <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
-
+  <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-  <audio controls autoplay>
-    <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
-  </audio>
-
-  <ul>
-    <li><a class="active" href="#home">HOME</a></li>
-    <li><a href="#start"  onclick="location.href='FirstPart.html'">START</a></li>
-    <li><a href="#score"  onclick="location.href='ScoreBoard.html'">SCORE BOARD</a></li>
-  </ul>
-  <br>
-    <div>
-
-      <img src="style4/orange4.png" class="circle">
-      <img src="style4/orange3.png" class="circle">
-      <br>
-      <img src="style4/orange2.png" class="circle">
-      <img src="style4/orange1.png" class="circle">
+<body class=" bg-dark">
+  <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Fixed navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
 
     </div>
+  </nav> -->
+  <nav class="navbar fixed-top navbar-expand-sm bg-dark">
+    <button type="button" class="btn btn-dark active" href="#home">HOME</button>
+    <button type="button" class="btn btn-dark" href="#start" onclick="location.href='FirstPart.html'">START</button>
+    <button type="button" class="btn btn-dark" href="#score" onclick="location.href='ScoreBoard.html'">SCORE BOARD</button>
+  </nav>
+  <br>
+
+  <!-- <ul>
+    <li><a class="active" href="#home">HOME</a></li>
+    <li><a href="#start" onclick="location.href='FirstPart.html'">START</a></li>
+    <li><a href="#score" onclick="location.href='ScoreBoard.html'">SCORE BOARD</a></li>
+  </ul> -->
+  <br>
+  <div class="container">
+    <div class="row">
+      <audio controls autoplay>
+        <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
+      </audio>
+    </div>
+    <div class="row">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="style4/11.jpg" alt="Los Angeles" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="style4/21.jpg" alt="Chicago" width="1100" height="500">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <img src="style4/orange4.png" class="autors-img">
+      </div>
+      <div class="col-md-6 col-sm-12">
+
+        <img src="style4/orange3.png" class="autors-img">
+      </div>
+      <div class="col-md-6 col-sm-12">
+
+        <img src="style4/orange2.png" class="autors-img">
+      </div>
+
+      <div class="col-md-6 col-sm-12">
+
+        <img src="style4/orange1.png" class="autors-img">
+      </div>
+
+    </div>
+  </div>
   <p>You can find our game on :</p>
-      <a href="https://www.facebook.com/games/instantgames" target="_blank"><img id="image" src="style4/facebook.png"</a>
-      <a href="https://www.instagram.com/?hl=sk" target="_blank"><img id="image" src="style4/instagram.png"</a>
+  <a href="https://www.facebook.com/games/instantgames" target="_blank"><img id="image" src="style4/facebook.png" </a> <a href="https://www.instagram.com/?hl=sk" target="_blank"><img id="image" src="style4/instagram.png"> </a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
