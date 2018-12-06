@@ -6,9 +6,9 @@ function up()
   PcSwitchCard();
     if(card>num){
         moneyInc();
-        console.log("money are at " +money+"$");
     }
     else{
-        alert('You lose!');
+      money=0;
+        console.log(money);
     }
 }
