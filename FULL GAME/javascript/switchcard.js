@@ -7,6 +7,8 @@ function switchCard()
   num = randomCard();
   num1= randomCardColor();
 
+
+
   switch (num)
   {
     case 1:
@@ -14,7 +16,7 @@ function switchCard()
     {
         case 1:
           document.getElementById("card").innerHTML="<img src=\"style7/AC.png\" width=\"300\" height=\"500\">";
-        break;
+          break;
 
         case 2:
           document.getElementById("card").innerHTML="<img src=\"style7/AD.png\" width=\"300\" height=\"500\">";
@@ -37,11 +39,11 @@ function switchCard()
     {
         case 1:
           document.getElementById("card").innerHTML="<img src=\"style7/2C.png\" width=\"300\" height=\"500\">";
-        break;
+          break;
 
         case 2:
           document.getElementById("card").innerHTML="<img src=\"style7/2H.png\" width=\"300\" height=\"500\">";
-        break;
+          break;
 
         case 3:
           document.getElementById("card").innerHTML="<img src=\"style7/2D.png\" width=\"300\" height=\"500\">";
@@ -69,7 +71,7 @@ function switchCard()
 
         case 3:
           document.getElementById("card").innerHTML="<img src=\"style7/3D.png\" width=\"300\" height=\"500\">";
-        break;
+          break;
 
         case 4:
           document.getElementById("card").innerHTML="<img src=\"style7/3C.png\" width=\"300\" height=\"500\">";
@@ -133,7 +135,7 @@ function switchCard()
     {
         case 1:
           document.getElementById("card").innerHTML="<img src=\"style7/6C.png\" width=\"300\" height=\"500\">";
-        break;
+          break;
 
         case 2:
           document.getElementById("card").innerHTML="<img src=\"style7/6D.png\" width=\"300\" height=\"500\">";
