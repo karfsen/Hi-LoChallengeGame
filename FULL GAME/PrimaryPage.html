@@ -35,10 +35,16 @@
 
     </div>
   </nav> -->
-  <nav class="navbar fixed-top navbar-expand-sm bg-dark">
-    <button type="button" class="btn btn-dark active" href="#home">HOME</button>
-    <button type="button" class="btn btn-dark" href="#start" onclick="location.href='FirstPart.html'">START</button>
-    <button type="button" class="btn btn-dark" href="#score" onclick="location.href='ScoreBoard.html'">SCORE BOARD</button>
+
+  <div class="row">
+    <image id="speakerImage" src="assets/images/speaker.png" onclick="togleMute()" class="mute-icon"></img>
+  </div>
+  <nav class="navbar fixed-top navbar-expand-sm bg-transparent">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-purple active" href="#home">HOME</button>
+      <button type="button" class="btn btn-purple " href="#start" onclick="location.href='FirstPart.html'">START</button>
+      <button type="button" class="btn btn-purple " href="#score" onclick="location.href='ScoreBoard.html'">SCORE BOARD</button>
+    </div>
   </nav>
   <br>
 
@@ -49,13 +55,15 @@
   </ul> -->
   <br>
   <div class="container">
-    <div class="row">
-      <audio controls autoplay>
-        <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
-      </audio>
+    <div class="row justify-content-center">
+      <div class="col-pull-right">
+        <audio id="audioPlayer" autoplay hidden>
+          <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
+        </audio>
+      </div>
     </div>
     <div class="row">
-      <div id="demo" class="carousel slide" data-ride="carousel">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
         <ul class="carousel-indicators">
@@ -83,7 +91,7 @@
         </a>
       </div>
     </div>
-    <div class="row">
+    <!--  <div class="row">
       <div class="col-md-6 col-sm-12">
         <img src="style4/orange4.png" class="autors-img">
       </div>
@@ -100,13 +108,29 @@
 
         <img src="style4/orange1.png" class="autors-img">
       </div>
-
-    </div>
+-->
+  </div>
   </div>
   <p>You can find our game on :</p>
   <a href="https://www.facebook.com/games/instantgames" target="_blank"><img id="image" src="style4/facebook.png" </a> <a href="https://www.instagram.com/?hl=sk" target="_blank"><img id="image" src="style4/instagram.png"> </a>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    var audioPlayer = document.getElementById("audioPlayer");
+    var speakerImage = document.getElementById("speakerImage");
+
+    function togleMute() {
+      if (audioPlayer.muted) {
+        speakerImage.src = "assets/images/speaker.png";
+        audioPlayer.muted = false;
+      } else {
+        speakerImage.src = "assets/images/mute.png";
+        audioPlayer.muted = true;
+      }
+    }
+  </script>
+
 </body>
 
 </html>

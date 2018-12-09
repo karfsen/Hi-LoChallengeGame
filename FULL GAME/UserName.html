@@ -3,42 +3,65 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style3/style.css">
-  <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
-  <title>UserNames</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style3/style.css">
+    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+    <title>UserNames</title>
 
 </head>
 
 <body>
-  <audio controls autoplay>
+<audio controls autoplay>
     <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
-  </audio>
-  <!-- <table border="0" width="400" align="center"> -->
-  <div class="row">
+</audio>
+<!-- <table border="0" width="400" align="center"> -->
+<div class="row">
     <h1 id="Registration">Registration</h1>
 
-  </div>
-  <!-- <tbody>
-      <tr> -->
-  <!-- <td> -->
-  <div class="row">
+</div>
+<!-- <tbody>
+    <tr> -->
+<!-- <td> -->
+<!--<form onsubmit="setname()" method="post">-->
+
+<div class="row">
     <div class="col-4 name-form">
-      Name:
+        Name:
     </div> <!-- </td> -->
     <!-- <td> -->
     <div class="col-4 name-form">
-      <input type="text" name="firstname" placeholder="Player 1">
+        <input id="nameInput" type="text" name="firstname" placeholder="Player 1">
     </div> <!-- </td> -->
-  </div>
-  <!-- </td> -->
-  <!-- </tr>
-    </tbody> -->
+</div>
+<!-- </td> -->
+<!-- </tr>
+  </tbody> -->
 
-  <!-- </table> -->
-  <div class="outer">
-    <button class="mainMenuButton" onclick="location.href='game.html'">PLAY</button>
-  </div>
+<!-- </table> -->
+<div class="outer">
+    <button type="button" class="mainMenuButton" onclick="setname()">PLAY</button>
+</div>
+<!--</form>-->
+<div id="result"></div>
+
+<script>
+    // Check browser support
+    if (typeof(Storage) !== "undefined") {
+        // Store
+        // localStorage.setItem("lastname", "name");
+        // Retrieve
+        document.getElementById("nameInput").placeholder = localStorage.getItem("lastname");
+        // document.getElementById("result").innerHTML = "asdasd";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
+
+    function setname() {
+        localStorage.setItem("lastname", document.getElementById("nameInput").value);
+        location.href = 'game.html';
+
+    }
+</script>
 </body>
 
 </html>

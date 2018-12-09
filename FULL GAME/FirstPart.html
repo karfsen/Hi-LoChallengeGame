@@ -3,30 +3,47 @@
 
 <head>
 
-    <meta charset="utf-8">
-        <title>Karty</title>
-             <link rel="stylesheet" href="style/style.css">
+  <meta charset="utf-8">
+  <title>Karty</title>
+  <link rel="stylesheet" href="style/firstPageStyle.css">
 
-             <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+  <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="assets/fonts/firasans/fira.css">
 
 </head>
 
 <body>
-  <audio controls autoplay>
+  <audio id="audioPlayer" autoplay hidden>
     <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
   </audio>
-<div class="outer">
+  <div class="row">
+    <image id="speakerImage" src="assets/images/speaker.png" onclick="togleMute()" class="mute-icon"></img>
+  </div>
+  <div class="outer">
     <div class="middle">
-        <div class="inner">
-            <button class="mainMenuButton" onclick="location.href='UserName.html'">START</button> <!-- som dala mainMenuButton "ako ze ako do tabulky" aby to pekne vyrovnane pod sebou bolo , tlacitka vysvietene cervenou farbou-->
+      <div class="inner">
+        <button class="mainMenuButton" onclick="location.href='UserName.html'">START</button> <!-- som dala mainMenuButton "ako ze ako do tabulky" aby to pekne vyrovnane pod sebou bolo , tlacitka vysvietene cervenou farbou-->
 
-            <button class="mainMenuButton" onclick="location.href='ScoreBoard.html'">SCORE BOARD</button>
-            <button class="mainMenuButton" onclick="location.href='Instruction.html'">INSTRUCTIONS</button>
+        <button class="mainMenuButton" onclick="location.href='ScoreBoard.html'">SCORE BOARD</button>
+        <button class="mainMenuButton" onclick="location.href='Instruction.html'">INSTRUCTIONS</button>
 
 
-        </div>
+      </div>
     </div>
-</div>
+  </div>
+  <script>
+    var audioPlayer = document.getElementById("audioPlayer");
+    var speakerImage = document.getElementById("speakerImage");
+    function togleMute() {
+      if (audioPlayer.muted) {
+        speakerImage.src="assets/images/speaker.png";
+        audioPlayer.muted = false;
+      } else {
+        speakerImage.src="assets/images/mute.png";
+        audioPlayer.muted = true;
+      }
+    }
+  </script>
 
 </body>
 
