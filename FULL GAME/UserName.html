@@ -3,42 +3,195 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style3/style.css">
-  <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
-  <title>UserNames</title>
+    <meta charset="utf-8">
+    <title>Instruction</title>
+    <!--<link rel="stylesheet" href="style5/style.css">-->
+    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
 
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style3/style.css">
+    <!--<link rel="stylesheet" href="style/docs.min.css">-->
+    <link rel="stylesheet" href="assets/fonts/firasans/fira.css">
+
+
+    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
 </head>
 
 <body>
-  <audio controls autoplay>
-    <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
-  </audio>
-  <!-- <table border="0" width="400" align="center"> -->
-  <div class="row">
-    <h1 id="Registration">Registration</h1>
 
-  </div>
-  <!-- <tbody>
-      <tr> -->
-  <!-- <td> -->
-  <div class="row">
-    <div class="col-4 name-form">
-      Name:
-    </div> <!-- </td> -->
-    <!-- <td> -->
-    <div class="col-4 name-form">
-      <input type="text" name="firstname" placeholder="Player 1">
-    </div> <!-- </td> -->
-  </div>
-  <!-- </td> -->
-  <!-- </tr>
-    </tbody> -->
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-transparent">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!--<ul class="navbar-nav mr-auto">-->
+            <div class="mr-auto">
 
-  <!-- </table> -->
-  <div class="outer">
-    <button class="mainMenuButton" onclick="location.href='game.html'">PLAY</button>
-  </div>
+                <!--<li class="nav-item active">-->
+
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-purple" onclick="location.href='PrimaryPage.html'">HOME
+                    </button>
+                    <button type="button" class="btn btn-purple active" href="#start"
+                            onclick="location.href='UserName.html'">START
+                    </button>
+                    <button type="button" class="btn btn-purple " href="#score"
+                            onclick="location.href='ScoreBoard.html'">SCORE
+                        BOARD
+                    </button>
+                    <button type="button" class="btn btn-purple" href="#instructions"
+                            onclick="location.href='Instruction.html'">INSTRUCTIONS
+                    </button>
+                </div>
+                <!--</li>-->
+                <!--<li class="nav-item active">-->
+                <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#">Link</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+            </div>
+
+            <div class="mt-2 mt-md-0">
+                <img id="speakerImage" src="assets/images/speaker.png" onclick="togleMute()"
+                     class="mute-icon my-2 my-sm-0"></img>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Begin page content -->
+<main role="main" class="container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-pull-right">
+                <audio id="audioPlayer" autoplay hidden>
+                    <source src="assets/audio/VegasMusic.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="row">
+                <h1 id="Registration">Registration</h1>
+
+            </div>
+            <div class="col-12">
+                <div class=" name-form">
+                    Name:
+                </div> <!-- </td> -->
+                <!-- <td> -->
+                <!--<div class="col-4 name-form">-->
+                <div class="name-form">
+                    <input id="nameInput" type="text" name="firstname" placeholder="Player 1">
+                </div> <!-- </td> -->
+                <div class="outer">
+                    <button type="button" class="mainMenuButton" onclick="setname()">PLAY</button>
+                </div>
+
+
+                <!--<div class="card border-dark mb-3">-->
+                <!--<div class="card-body bg-purple-light text-white">-->
+                <!--<div class="card-text">-->
+                <!--<h1>Hi-Lo challenge rules</h1>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+
+
+                <!--</div>-->
+            </div>
+        </div>
+
+        <!--  <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <img src="style4/orange4.png" class="autors-img">
+          </div>
+          <div class="col-md-6 col-sm-12">
+
+            <img src="style4/orange3.png" class="autors-img">
+          </div>
+          <div class="col-md-6 col-sm-12">
+
+            <img src="style4/orange2.png" class="autors-img">
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+
+            <img src="style4/orange1.png" class="autors-img">
+          </div>
+    -->
+    </div>
+</main>
+
+<footer class="footer bg-transparent">
+    <div class="container">
+        <span class="text-white">
+            You can find our game on :
+            <a href="https://www.facebook.com/games/instantgames" target="_blank"><img class="image" id="fb-image"
+                                                                                       src="style4/facebook.png"> </a>
+            <a href="https://www.instagram.com/?hl=sk" target="_blank"><img class="image" id="insta-image"
+                                                                            src="style4/instagram.png"> </a>
+        </span>
+    </div>
+</footer>
+
+<script>
+    // Check browser support
+    if (typeof(Storage) !== "undefined") {
+        // Store
+        // localStorage.setItem("lastname", "name");
+        // Retrieve
+        var name = localStorage.getItem("lastname")
+        if (name.length != 0) {
+            document.getElementById("nameInput").placeholder = name;
+        }
+        // document.getElementById("result").innerHTML = "asdasd";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
+
+    function setname() {
+        localStorage.setItem("lastname", document.getElementById("nameInput").value);
+        location.href = 'game.html';
+
+    }
+</script>
+
+<script>
+    var audioPlayer = document.getElementById("audioPlayer");
+    var speakerImage = document.getElementById("speakerImage");
+
+    function togleMute() {
+        if (audioPlayer.muted) {
+            speakerImage.src = "assets/images/speaker.png";
+            audioPlayer.muted = false;
+        } else {
+            speakerImage.src = "assets/images/mute.png";
+            audioPlayer.muted = true;
+        }
+    }
+</script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
 </body>
 
+
 </html>
+

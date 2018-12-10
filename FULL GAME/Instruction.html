@@ -4,130 +4,337 @@
 <head>
 
     <meta charset="utf-8">
-        <title>Karty</title>
-             <link rel="stylesheet" href="style5/style.css">
+    <title>Instruction</title>
+    <!--<link rel="stylesheet" href="style5/style.css">-->
+    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
 
-             <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style/style.css">
+    <!--<link rel="stylesheet" href="style/docs.min.css">-->
+    <link rel="stylesheet" href="assets/fonts/firasans/fira.css">
 
+
+    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Made by Roman -->
 
-<h1>Hi-Lo challenge rules</h1>
-<audio controls autoplay>
-  <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
-</audio>
-<br>
-<p>Hi-Lo, or High-Low, is a fairly simple card game. It uses a deck of 13 cards minus the jokers, and it has players guess whether a certain card is higher or lower than one showing on the table. It is a pretty standard and simple game.
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-transparent">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!--<ul class="navbar-nav mr-auto">-->
+            <div class="mr-auto">
 
-<h3>Description</h3>
+                <!--<li class="nav-item active">-->
 
-<p>Guess whether the next card will be higher or lower.</p>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-purple" onclick="location.href='PrimaryPage.html'">HOME
+                    </button>
+                    <button type="button" class="btn btn-purple " href="#start"
+                            onclick="location.href='UserName.html'">START
+                    </button>
+                    <button type="button" class="btn btn-purple " href="#score"
+                            onclick="location.href='ScoreBoard.html'">SCORE
+                        BOARD
+                    </button>
+                    <button type="button" class="btn btn-purple active" href="#instructions"
+                            onclick="location.href='Instruction.html'">INSTRUCTIONS
+                    </button>
+                </div>
+                <!--</li>-->
+                <!--<li class="nav-item active">-->
+                <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#">Link</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+            </div>
 
-<h3>Number of Players</h3>
+            <div class="mt-2 mt-md-0">
+                <img id="speakerImage" src="assets/images/speaker.png" onclick="togleMute()"
+                     class="mute-icon my-2 my-sm-0"></img>
+            </div>
+        </div>
+    </nav>
+</header>
 
-<p>Technically, the game can have any number of players, but at any given time, there are only two players actually playing. The player plays against the dealer.
-The dealer ( dealer is always computer) who is in control of the deck, and the player, who is responsible for guessing the values of cards, are the only participants in this game.
-After receiving a card, the player has to say if the following card will be higher or lower in value.
-If your prediction is right, the player wins!</p>
-
-
-
-<h3>Dealing and Play</h3>
-
-<p>After shuffling the cards in any order and cutting the deck, the computer generates one card face-down in front of the player on the playing table, then another card for player face-up.
-The rest cards, he sets aside while the player guesses the value.
-After the cards are down, the player places his bet (bet is automatically set for one hundred dollars).
-Player starts with budget of one thousand dollars. When the player guesses, he wins or loses the pot depending on the outcome of his guess.
-After that round, the player can quit the game or continue to the next round.
-And this same principle is used on every round of this game.</p>
-
-<h3>Guessing</h3>
-
-<p>Based on the card that's currently showing, the player has to guess whether the face-down card is higher or lower than the face-up card. After the guess, the dealer flips the hidden card, and the answer is revealed.
-If the guess was correct, the player wins and can choose to continue; if not, the player can quit.</p>
-
-<h3>End of the game.</h3>
-
-<p>This game ends If player will reach zero dollars he will be redictered to scoreboard where he can check his game statistics.
-Eventually there is a possibility of very good and lucky player, so for him there is a possibility of endlessness playing.
-From the creators of this game. Have Fun</p>
-
-<table border="1" cellspacing="0" cellpadding="2">
-<tbody>
-<tr class="toprow">
-<td valign="top" width="90">Value</td>
-<td valign="top" width="90">Card</td>
-</tr>
-<tr>
-<td>13</td>
-<td>King</td>
-</tr>
-<tr>
-<td>12</td>
-<td>Queen</td>
-
-</tr>
-<tr>
-<td>11</td>
-<td>Jack</td>
-
-</tr>
-<tr>
-<td>10</td>
-<td>10</td>
-
-</tr>
-<tr>
-<td>9</td>
-<td>9</td>
-
-</tr>
-<tr>
-<td>8</td>
-<td>8</td>
-
-</tr>
-<tr>
-<td>7</td>
-<td>7</td>
-
-</tr>
-<tr>
-<td>6</td>
-<td>6</td>
-
-</tr>
-<tr>
-<td>5</td>
-<td>5</td>
-
-</tr>
-<tr>
-<td>4</td>
-<td>4</td>
-
-</tr>
-<tr>
-<td>3</td>
-<td>3</td>
-
-</tr>
-<tr>
-<td>2</td>
-<td>2</td>
-
-</tr>
-<tr>
-<td>0</td>
-<td>A</td>
+<!-- Begin page content -->
+<main role="main" class="container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-pull-right">
+                <audio id="audioPlayer" autoplay hidden>
+                    <source src="assets/audio/VegasMusic.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <!-- Made by Roman. Modified by Saska-->
 
 
-</tr>
-</tbody>
-</table>
+                <div class="card border-dark mb-3">
+                    <div class="card-body bg-purple-light text-white">
+                        <div class="card-text">
+                            <h1>Hi-Lo challenge rules</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-dark mb-3">
+                    <div class="card-body bg-purple text-white">
+                        <div class="card-text">
+                            Hi-Lo, or High-Low, is a fairly simple card game. It uses a deck of 13 cards minus the
+                            jokers, and it
+                            has players guess whether a certain card is higher or lower than one showing on the table.
+                            It is a
+                            pretty standard and simple game.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-dark mb-3">
+                    <div class="card-header bg-purple-light text-white">
+                        <h5 class="card-title">Description</h5>
+                    </div>
+                    <div class="card-body bg-purple text-white">
+                        <div class="card-text">Guess whether the next card will be higher or lower.</div>
+                    </div>
+                </div>
+
+                <div class="card border-dark mb-3">
+                    <div class="card-header bg-purple-light text-white">
+                        <h5 class="card-title">Number of Players</h5>
+                    </div>
+                    <div class="card-body bg-purple text-white">
+                        <div class="card-text">
+                            Technically, the game can have any number of players, but at any given time, there are only
+                            two
+                            players actually playing. The player plays against the dealer.
+                            The dealer ( dealer is always computer) who is in control of the deck, and the player, who
+                            is
+                            responsible for guessing the values of cards, are the only participants in this game.
+                            After receiving a card, the player has to say if the following card will be higher or lower
+                            in
+                            value.
+                            If your prediction is right, the player wins!
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card border-dark mb-3">
+                    <div class="card-header bg-purple-light text-white">
+                        <h5 class="card-title">
+                            Dealing and Play
+                        </h5>
+                    </div>
+                    <div class="card-body bg-purple text-white">
+                        <div class="card-text">
+                            After shuffling the cards in any order and cutting the deck, the computer generates one card
+                            face-down in front of the player on the playing table, then another card for player face-up.
+                            The rest cards, he sets aside while the player guesses the value.
+                            After the cards are down, the player places his bet (bet is automatically set for one
+                            hundred
+                            dollars).
+                            Player starts with budget of one thousand dollars. When the player guesses, he wins or loses
+                            the pot
+                            depending on the outcome of his guess.
+                            After that round, the player can quit the game or continue to the next round.
+                            And this same principle is used on every round of this game.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card border-dark mb-3">
+                    <div class="card-header bg-purple-light text-white">
+                        <h5 class="card-title">
+                            Guessing
+                        </h5>
+                    </div>
+                    <div class="card-body bg-purple text-white">
+                        <div class="card-text">
+                            Based on the card that's currently showing, the player has to guess whether the face-down
+                            card is
+                            higher or lower than the face-up card. After the guess, the dealer flips the hidden card,
+                            and the
+                            answer is revealed.
+                            If the guess was correct, the player wins and can choose to continue; if not, the player can
+                            quit.
+                        </div>
+                    </div>
+                </div>
+                <div class="card border-dark mb-3">
+                    <div class="card-header bg-purple-light text-white">
+                        <h5 class="card-title">
+                            End of the game.
+                        </h5>
+                    </div>
+                    <div class="card-body bg-purple text-white">
+                        <div class="card-text">
+                            This game ends If player will reach zero dollars he will be redictered to scoreboard where
+                            he can
+                            check his game statistics.
+                            Eventually there is a possibility of very good and lucky player, so for him there is a
+                            possibility
+                            of endlessness playing.
+                            From the creators of this game. Have Fun
+                            <table class="table table-hover table-dark">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Value</th>
+                                    <th scope="col">Card</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>13</td>
+                                    <td>King</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Queen</td>
+
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Jack</td>
+
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>10</td>
+
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>9</td>
+
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>8</td>
+
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>7</td>
+
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>6</td>
+
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>5</td>
+
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>4</td>
+
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>3</td>
+
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2</td>
+
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>A</td>
+
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--</div>-->
+            </div>
+        </div>
+
+        <!--  <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <img src="style4/orange4.png" class="autors-img">
+          </div>
+          <div class="col-md-6 col-sm-12">
+
+            <img src="style4/orange3.png" class="autors-img">
+          </div>
+          <div class="col-md-6 col-sm-12">
+
+            <img src="style4/orange2.png" class="autors-img">
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+
+            <img src="style4/orange1.png" class="autors-img">
+          </div>
+    -->
+    </div>
+</main>
+
+<footer class="footer bg-transparent">
+    <div class="container">
+        <span class="text-white">
+            You can find our game on :
+            <a href="https://www.facebook.com/games/instantgames" target="_blank"><img class="image" id="fb-image"
+                                                                                       src="style4/facebook.png"> </a>
+            <a href="https://www.instagram.com/?hl=sk" target="_blank"><img class="image" id="insta-image"
+                                                                            src="style4/instagram.png"> </a>
+        </span>
+    </div>
+</footer>
+
+
+<script>
+    var audioPlayer = document.getElementById("audioPlayer");
+    var speakerImage = document.getElementById("speakerImage");
+
+    function togleMute() {
+        if (audioPlayer.muted) {
+            speakerImage.src = "assets/images/speaker.png";
+            audioPlayer.muted = false;
+        } else {
+            speakerImage.src = "assets/images/mute.png";
+            audioPlayer.muted = true;
+        }
+    }
+</script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 
 </body>
 
+
 </html>
+

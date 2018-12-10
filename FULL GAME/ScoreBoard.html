@@ -4,41 +4,181 @@
 <head>
 
     <meta charset="utf-8">
-        <title>Karty</title>
-             <link rel="stylesheet" href="style6/style.css">
+    <title>Karty</title>
+    <link rel="stylesheet" href="style6/style.css">
 
-             <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
 
+    <link rel="stylesheet" href="style/style.css">
+    <!--<link rel="stylesheet" href="style/docs.min.css">-->
+    <link rel="stylesheet" href="assets/fonts/firasans/fira.css">
+
+
+    <link rel="icon" href="images/logo.jpg" type="image/gif" sizes="16x16">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
 </head>
 
 <body>
-  <audio controls autoplay>
-    <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
-  </audio>
 
-  <h1> Score Board</h1>
-  <table border="5" cellspacing="5" cellpadding="5" align="center">
-  <tbody>
-<td valign="top" width="90">Player Name</td>
-<td valign="top" width="90">Score</td>
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-transparent">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!--<ul class="navbar-nav mr-auto">-->
+            <div class="mr-auto">
+
+                <!--<li class="nav-item active">-->
+
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-purple" onclick="location.href='PrimaryPage.html'">HOME
+                    </button>
+                    <button type="button" class="btn btn-purple " href="#start"
+                            onclick="location.href='UserName.html'">START
+                    </button>
+                    <button type="button" class="btn btn-purple active" href="#score"
+                            onclick="location.href='ScoreBoard.html'">SCORE
+                        BOARD
+                    </button>
+                    <button type="button" class="btn btn-purple" href="#instructions"
+                            onclick="location.href='Instruction.html'">INSTRUCTIONS
+                    </button>
+                </div>
+                <!--</li>-->
+                <!--<li class="nav-item active">-->
+                <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#">Link</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+            </div>
+
+            <div class="mt-2 mt-md-0">
+                <img id="speakerImage" src="assets/images/speaker.png" onclick="togleMute()"
+                     class="mute-icon my-2 my-sm-0"></img>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Begin page content -->
+<main role="main" class="container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-pull-right">
+                <audio id="audioPlayer" autoplay hidden>
+                    <source src="assets/audio/VegasMusic.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+
+                <!--<div class="bd-example bg-purple">-->
+
+                <div class="card border-dark">
+                    <div class="card-body bg-purple text-white">
+                        <h5 class="card-title">Score board</h5>
+                        <table class="table table-hover table-dark">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Score</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry the Bird</td>
+                                <td>33</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!--</div>-->
+            </div>
+        </div>
+
+        <!--  <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <img src="style4/orange4.png" class="autors-img">
+          </div>
+          <div class="col-md-6 col-sm-12">
+
+            <img src="style4/orange3.png" class="autors-img">
+          </div>
+          <div class="col-md-6 col-sm-12">
+
+            <img src="style4/orange2.png" class="autors-img">
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+
+            <img src="style4/orange1.png" class="autors-img">
+          </div>
+    -->
+    </div>
+</main>
+
+<footer class="footer bg-transparent">
+    <div class="container">
+        <span class="text-white">
+            You can find our game on :
+            <a href="https://www.facebook.com/games/instantgames" target="_blank"><img class="image" id="fb-image"
+                                                                                       src="style4/facebook.png"> </a>
+            <a href="https://www.instagram.com/?hl=sk" target="_blank"><img class="image" id="insta-image"
+                                                                            src="style4/instagram.png"> </a>
+        </span>
+    </div>
+</footer>
 
 
-<tr>
-<td>   </td>
-<td>   </td>
-</tr>
+<script>
+    var audioPlayer = document.getElementById("audioPlayer");
+    var speakerImage = document.getElementById("speakerImage");
 
-<tr>
-<td></td>
-<td></td>
-</tr>
+    function togleMute() {
+        if (audioPlayer.muted) {
+            speakerImage.src = "assets/images/speaker.png";
+            audioPlayer.muted = false;
+        } else {
+            speakerImage.src = "assets/images/mute.png";
+            audioPlayer.muted = true;
+        }
+    }
+</script>
 
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
-
-
-
-</tbody>
-</table>
 
 </body>
+
+
 </html>
