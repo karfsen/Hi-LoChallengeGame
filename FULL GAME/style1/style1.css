@@ -1,6 +1,5 @@
 html {
 
-<<<<<<< HEAD
     background-image: url("3.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -9,16 +8,6 @@ html {
     /* background-color: black; */
     height: 100%;
     /* background-repeat:repeat; */
-=======
-   background-image: url("3.png");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
-  /* background-color: black; */
-    height: 100%;
-   /* background-repeat:repeat; */
->>>>>>> 2f3a766d6aa73f5a2881dd3aea9183c9734aed4c
     color: white;
     font-family: FrankRuehl;
 
