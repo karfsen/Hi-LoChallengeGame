@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+=======
+html {
+ background-image:url("3.png");
+ /* background-color: black; */
+ height:100%;
+ background-size:cover;
+ color: white;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+>>>>>>> 2f3a766d6aa73f5a2881dd3aea9183c9734aed4c
+h1 {
+  text-align: center;
+}

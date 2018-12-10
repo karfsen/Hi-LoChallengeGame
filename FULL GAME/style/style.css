@@ -1,0 +1,52 @@
+.bg-purple {
+    background: #300303;
+    background-color: #300303 !important;
+}
+.bg-purple-light {
+    background: #805353;
+    background-color: #502323 !important;
+}
+
+.btn-purple {
+    background: #300303;
+}
+
+.btn-purple {
+    background: #300303;
+    color: #ffffff;
+}
+
+.btn-purple:hover, .btn-purple:focus, .btn-purple:active, .btn-purple.active, .open > .dropdown-toggle.btn-purple {
+    background: #552828;
+}
+
+.btn-purple:active, .btn-purple.active {
+    background: #805353;
+    box-shadow: none;
+}
+
+.btn-space {
+    margin-right: 5px;
+}
+
+body {
+    font-family: FiraSans;
+    background-image: url("3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mute-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.image {
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
