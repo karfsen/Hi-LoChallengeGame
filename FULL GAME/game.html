@@ -42,28 +42,50 @@
 
 
     <title>Game</title>
-
 </head>
 
 <body>
 
+          <div class="mt-2 mt-md-0">
+            <img id="speakerImage" src="assets/images/speaker.png" onclick="togleMute()" class="mute-icon my-2 my-sm-0"></img>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-pull-right">
+            <audio id="audioPlayer" autoplay hidden>
+              <source src="assets/audio/VegasMusic.mp3" type="audio/mp3">
+            </audio>
+          </div>
+        </div>
 <!-- Create by Saska and Roman -->
 <div class="row">
 
-    <div class="class" id="card" align="left"><img src="card_back.jpg" width="300" height="500"></div>
+    <div class="class" id="card" align="right"><img src="card_back.jpg" width="300" height="500"></div>
 
 
-    <div class="class" align="center" onclick="up()">
+    <div class="class" align="center">
         <!--<button onclick="up()">-->
-        <div class="triangle-wrap">
-            <div class='triangle-up'></div>
-        </div>
-        <!--</button>-->
-        <br>
-        <!--<button onclick="Down()">-->
-        <div class="triangle-wrap" onclick="Down()">
-            <div class='triangle-down'></div>
-        </div>
+        <!--<div class="triangle-wrap">-->
+        <!--<div class='triangle-up'></div>-->
+        <!--</div>-->
+        <audio id="myAudio">
+  <source src="assets/audio/click.mp3" type="audio/mp3">
+  <source src="assets/audio/click.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+        <button  class="button-shape" onclick="playAudio(),Down()">
+            <img class="svg-size" src="assets/images/chevron-circle-down.svg" alt="circle">
+        </button>
+        <button  class="button-shape" onclick="playAudio(),up()">
+            <img class="svg-size" src="assets/images/chevron-circle-up.svg" alt="circle">
+        </button>
+
         <!--</button>-->
         <br>
         <br>
@@ -71,7 +93,7 @@
 
     </div>
 
-    <div class="class1" id="card1" align="right"><img src="card_back.jpg" width="300" height="500"></div>
+    <div class="class1" id="card1" align="left"><img src="card_back.jpg" width="300" height="500"></div>
 </div>
 
 <div class="row">
@@ -92,27 +114,12 @@
         </div>
     </div>
     <div class="col-4">
-        <audio controls autoplay>
+        <!-- <audio controls autoplay>
             <source src="assets/audio/VegasMusic.mp3" type="audio/mp3" align="bottom">
-        </audio>
-        <!--<div class="card border-dark mb-3 ">-->
-        <!--<div class="card-header bg-purple-light text-white">-->
-        <!--<h5 class="card-title">-->
-        <!--Guessing-->
-        <!--</h5>-->
-        <!--</div>-->
-        <!--<div class="card-body bg-purple text-white">-->
-        <!--<div class="card-text">-->
-        <!--Based on the card that's currently showing, the player has to guess whether the face-down-->
-        <!--card is-->
-        <!--higher or lower than the face-up card. After the guess, the dealer flips the hidden card,-->
-        <!--and the-->
-        <!--answer is revealed.-->
-        <!--If the guess was correct, the player wins and can choose to continue; if not, the player can-->
-        <!--quit.-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
+        </audio> -->
+        <button onclick="location.href='UserName.html'">Restart</button>
+
+
     </div>
     <div class="col-4">
 
@@ -129,6 +136,7 @@
             </div>
         </div>
     </div>
+
 </div>
 <script>
     var name = localStorage.getItem("lastname");
@@ -142,6 +150,30 @@
 
 
 </script>
+<!--Made script by Saska and Roman-->
+<script>
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+x.play();
+}
+</script>
+
+<script>
+  var audioPlayer = document.getElementById("audioPlayer");
+  var speakerImage = document.getElementById("speakerImage");
+
+  function togleMute() {
+    if (audioPlayer.muted) {
+      speakerImage.src = "assets/images/speaker.png";
+      audioPlayer.muted = false;
+    } else {
+      speakerImage.src = "assets/images/mute.png";
+      audioPlayer.muted = true;
+    }
+  }
+</script>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
