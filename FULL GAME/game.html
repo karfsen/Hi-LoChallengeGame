@@ -123,7 +123,7 @@
                 </h5>
             </div>
             <div class="card-body bg-purple text-white">
-                <div class="card-text">
+                <div class="card-text" id="money">
 
                 </div>
             </div>
@@ -134,12 +134,12 @@
     var name = localStorage.getItem("lastname");
     console.log(name);
     console.log(name.length);
-    if (name.length !== 0) {
+    if (name.length !== 0 && name.length<15) {
         document.getElementById("nameBox").innerHTML = name;
     } else {
         document.getElementById("nameBox").innerHTML = "Player"
     }
-
+$("#money").text(money);
 
 </script>
 <script src="js/jquery.min.js"></script>

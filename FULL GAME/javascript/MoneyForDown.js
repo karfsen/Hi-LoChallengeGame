@@ -2,10 +2,10 @@ $(document).ready(function() {
 
 });
 
-    if(card<num){
+    if(win==1){
         moneyInc();
     }
     else{
         money = 0;
-        console.log(money);
+        
     }

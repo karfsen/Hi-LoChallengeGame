@@ -2,12 +2,13 @@
 //let bet=true/false;
 //let money=100;
 
-let money=1000;
 function moneyInc()
-{
+{let money=1000;
 
   if((up())==1)
     money=money*2;
   else
   money=0;
+
+  return money;
 }
