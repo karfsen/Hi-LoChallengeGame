@@ -32,9 +32,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* background-color: black; */
     height: 100%;
-    /* background-repeat:repeat; */
     color: white;
     font-family: FrankRuehl;
 
@@ -47,7 +45,6 @@ html {
     border-right: 80px solid transparent;
 
     border-bottom: 80px solid red;
-    /*border-color: transparent;*/
     background-color: transparent;
 }
 
@@ -62,8 +59,6 @@ html {
 
 .class {
     float: left;
-    margin-top: auto;
-    margin-bottom: 0;
     width: 33.33%;
     padding: 5px;
 }
@@ -72,78 +67,26 @@ img {
     border-radius: 10%;
 }
 
-/* button {
-    background: black;
-    margin: 50px;
-} */
-
-/* table {
-    text-align: center;
-} */
-
-/* .triangle-up, .triangle-down {
-    position: relative;
-    background-color: white;
-    /*opacity: 0.7;*/
-    text-align: left;
-} */
-
-/* .triangle-up:before,
-.triangle-down:before,
-.triangle-up:after,
-.triangle-down:after {
-    content: '';
-    position: absolute;
-    background-color: inherit;
-} */
-
-/* .triangle-up,
-.triangle-down,
-.triangle-up:before,
-.triangle-down:before,
-.triangle-up:after,
-.triangle-down:after {
-    width: 7em;
-    height: 7em;
-    border-top-right-radius: 30%;
-    background-color: #300303;
-
-} */
-
-/* .triangle-down {
-    transform: rotate(0deg) skewX(-30deg) scale(1, .866);
-    margin-left: 100px;
-
-} */
-
-/* .triangle-up {
-    transform: rotate(180deg) skewX(-30deg) scale(1, .866);
-    margin-top: 150px;
-
-} */
-
-/* .triangle-up:before, .triangle-down:before {
-    transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
-} */
-
-/* .triangle-up:after, .triangle-down:after {
-    transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
-} */
-
-/* .triangle-up, .triangle-down {
-    filter: drop-shadow(20px 20px 20px rgb(0, 0, 0));
-    -webkit-filter: drop-shadow(20px 20px 20px rgb(0, 0, 0));
-} */
-
 .svg-size {
     width: 100%;
     height: 100%;
 }
 
 .button-shape {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 20%;
     border-color: #805353;
     background-color: #805353;
 }
+
+.name-card{
+  margin: 10%;
+}
+
+.restart-button{
+  width: 30%;
+  height: 15%;
+  margin: 10%;
+}
+html, body {margin: 0; height: 100%; overflow: hidden}
