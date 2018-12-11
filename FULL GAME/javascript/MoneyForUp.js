@@ -7,5 +7,4 @@ $(document).ready(function() {
     }
     else{
         money = 0;
-        console.log(money);
     }
