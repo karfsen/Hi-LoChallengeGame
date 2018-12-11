@@ -13,4 +13,5 @@ function up() {
         setTimeout(changeCard, 1500);
         win=0;
     }
+num=card;
 }

@@ -53,10 +53,10 @@
     <div class="class" id="card" align="left"><img src="card_back.jpg" width="300" height="500"></div>
 
 
-    <div class="class" align="center" onclick="up()">
+    <div class="class" align="center">
         <!--<button onclick="up()">-->
         <div class="triangle-wrap">
-            <div class='triangle-up'></div>
+            <div class='triangle-up' onclick="up()"></div>
         </div>
         <!--</button>-->
         <br>
@@ -139,7 +139,8 @@
     } else {
         document.getElementById("nameBox").innerHTML = "Player"
     }
-$("#money").text(money);
+    console.log("breakpoint");
+$("#money").text(moneyInc());
 
 </script>
 <script src="js/jquery.min.js"></script>
