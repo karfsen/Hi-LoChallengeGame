@@ -3,13 +3,12 @@
 //let money=100;
 function moneyInc()
 {
-let win=0; 
-let money=1000;
-
+let win;
+let money=500;
   if(win==1)
-    money=money*2;
+    return money*2;
   else
-  money=0;
-
-  return money;
+  {
+    return money=0;
+  }
 }
