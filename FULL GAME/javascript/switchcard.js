@@ -201,6 +201,7 @@ function switchCard()
     }
 
       break;
+
     case 9:
     switch (num1)
     {
@@ -272,6 +273,7 @@ function switchCard()
     }
 
       break;
+
     case 12:
     switch (num1)
     {
@@ -319,7 +321,9 @@ function switchCard()
     }
 
       break;
+
     default: text="No such a value found"
   }
+  
   return num;
 }

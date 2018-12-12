@@ -1,7 +1,10 @@
 function up()
 {
+
   //let win=0;
+
     PcSwitchCard();
+
 if (card==num)
     {
         alert("YO LUCKY TRY AGAIN");
@@ -15,6 +18,7 @@ else if (card > num)
         setTimeout(changeCard, 1500);
         moneyInc(1);
     }
+
     else
     {
         alert("You lose...");
@@ -22,5 +26,7 @@ else if (card > num)
         //win=0;
         moneyInc(0);
     }
-num=card
+
+num=card;
+
 }

@@ -3,12 +3,16 @@ let img;
 $(document).ready(function() {
 
 });
-function PcSwitchCard() {
+function PcSwitchCard()
+{
     card = randomPcCard();
     card1 = randomPcCardColor();
-    switch (card) {
+
+    switch (card)
+    {
         case 1:
-            switch (card1) {
+            switch (card1)
+            {
                 case 1:
                     document.getElementById("card1").innerHTML = "<img src=\"style7/AC.png\" width=\"300\" height=\"500\">";
                     img = "<img src=\"style7/AC.png\" width=\"300\" height=\"500\">";
@@ -312,6 +316,7 @@ function PcSwitchCard() {
             }
 
             break;
+
         case 12:
             switch (card1)
             {
