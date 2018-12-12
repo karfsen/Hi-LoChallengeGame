@@ -9,7 +9,7 @@ function moneyInc(arg)
   }
   else
   {
-    money = 0;
+    money = money-1000;
   }
   document.getElementById("moneyLabel").innerHTML = money;
 }
