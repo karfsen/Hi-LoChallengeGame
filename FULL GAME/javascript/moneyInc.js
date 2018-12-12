@@ -17,7 +17,7 @@ function moneyInc(arg)
   else
   {
 
-    money = money/2;
+    money = money-1000;
 
   }
 
