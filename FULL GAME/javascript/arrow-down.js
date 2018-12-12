@@ -3,21 +3,20 @@ function Down() {
     PcSwitchCard();
     if(num==card)
   {
-    alert("YO LUCKY TRY AGAIN");
+    alert("YOU LUCKY TRY AGAIN");
     setTimeout(changeCard, 1500);
   }
    else if (num > card)
       {
           alert("You win! Try to guess another one!");
           setTimeout(changeCard, 1500);
-          win=1;
-          moneyInc();
+          moneyInc(1);
       }
       else
       {
           alert("You lose...");
           setTimeout(changeCard, 1500);
-          win=0;
+          moneyInc(0);
 
       }
     num=card;
