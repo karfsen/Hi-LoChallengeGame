@@ -26,7 +26,7 @@ else if (card > num)
         //win=0;
         moneyInc(0);
     }
-
+checkLose();
 num=card;
 
 }

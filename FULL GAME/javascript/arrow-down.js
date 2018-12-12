@@ -15,7 +15,6 @@ function Down() {
           alert("You win! Try to guess another one!");
           setTimeout(changeCard, 1500);
           moneyInc(1);
-
       }
 
       else
@@ -26,7 +25,7 @@ function Down() {
           moneyInc(0);
 
       }
-      
+    checkLose();
     num=card;
 
 }

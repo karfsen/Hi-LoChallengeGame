@@ -10,7 +10,7 @@ function moneyInc(arg)
   if(arg===1)
   {
 
-    money*=2;
+    money*=1000;
 
   }
 
