@@ -21,6 +21,6 @@ function moneyInc(arg)
 
   }
 
-  document.getElementById("moneyLabel").innerHTML = money;
+  document.getElementById("moneyLabel").innerHTML = money+"$";
 
 }
