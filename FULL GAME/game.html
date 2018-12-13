@@ -136,10 +136,10 @@
 
       </div>
       <script>
-        let win;
+        //let win;
         let money=1000;
         document.getElementById("moneyLabel").innerHTML = money;
-        var name = localStorage.getItem("lastname");
+        let name = localStorage.getItem("lastname");
         console.log(name);
         console.log(name.length);
         if (name.length !== 0) {
@@ -150,7 +150,7 @@
       </script>
       <!--Made script by Saska and Roman-->
       <script>
-        var x = document.getElementById("myAudio");
+        let x = document.getElementById("myAudio");
 
         function playAudio() {
           x.play();
@@ -158,8 +158,8 @@
       </script>
 
       <script>
-        var audioPlayer = document.getElementById("audioPlayer");
-        var speakerImage = document.getElementById("speakerImage");
+        let audioPlayer = document.getElementById("audioPlayer");
+        let speakerImage = document.getElementById("speakerImage");
 
         function togleMute() {
           if (audioPlayer.muted) {
