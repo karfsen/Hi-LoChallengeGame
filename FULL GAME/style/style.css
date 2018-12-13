@@ -31,7 +31,7 @@
 
 body {
     font-family: FiraSans;
-    background-image: url("3.png");
+    background-image: url("../assets/images/background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

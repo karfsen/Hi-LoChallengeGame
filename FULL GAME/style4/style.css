@@ -1,5 +1,5 @@
 body {
-    background-image: url("3.png");
+    background-image: url("../assets/images/background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,4 +61,9 @@ p {
 
 .carousel-customization {
     width: 50%;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
 }
