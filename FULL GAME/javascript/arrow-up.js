@@ -7,13 +7,22 @@ function up()
 
 if (card==num)
     {
-        alert("YO LUCKY TRY AGAIN");
+        swal({
+            title: "You're the lucky one !",
+            text: "Try again!",
+            button: "^_^",
+        });
         setTimeout(changeCard, 1500);
     }
 
 else if (card > num)
     {
-        alert("You win! Try to guess another one!");
+        swal({
+            title: "You win!",
+            text: "You've earned 1000$!",
+            icon: "success",
+            button: "Aww yiss!",
+        });
         //win=1;
         setTimeout(changeCard, 1500);
         moneyInc(1);
@@ -21,7 +30,12 @@ else if (card > num)
 
     else
     {
-        alert("You lose...");
+        swal({
+            title: "You lose!",
+            text: "You've lost 1000$!",
+            icon: "error",
+            button: "Aww nooo!",
+        });
         setTimeout(changeCard, 1500);
         //win=0;
         moneyInc(0);
