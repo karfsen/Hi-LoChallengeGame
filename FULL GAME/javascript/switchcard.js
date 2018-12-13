@@ -15,19 +15,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/AC.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/AC.png\" class=\"cardSize\">";
           break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/AD.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/AD.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/AH.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/AH.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/AS.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/AS.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -38,19 +38,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/2C.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/2C.png\" class=\"cardSize\">";
           break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/2H.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/2H.png\" class=\"cardSize\">";
           break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/2D.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/2D.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/2S.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/2S.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -62,19 +62,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/3S.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/3S.png\" class=\"cardSize\">";
         break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/3H.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/3H.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/3D.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/3D.png\" class=\"cardSize\">";
           break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/3C.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/3C.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -86,19 +86,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/4C.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/4C.png\" class=\"cardSize\">";
         break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/4D.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/4D.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/4H.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/4H.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/4S.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/4S.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -110,19 +110,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/5C.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/5C.png\" class=\"cardSize\">";
         break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/5D.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/5D.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/5H.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/5H.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/5S.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/5S.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -134,19 +134,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/6C.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/6C.png\" class=\"cardSize\">";
           break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/6D.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/6D.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/6H.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/6H.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/6S.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/6S.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -158,19 +158,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/7C.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/7C.png\" class=\"cardSize\">";
         break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/7D.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/7D.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/7H.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/7H.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/7S.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/7S.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -182,19 +182,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/8C.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/8C.png\" class=\"cardSize\">";
         break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/8H.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/8H.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/8D.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/8D.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/8S.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/8S.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -206,19 +206,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/9C.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/9C.png\" class=\"cardSize\">";
         break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/9H.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/9H.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/9D.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/9D.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/9S.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/9S.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -230,19 +230,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/10C.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/10C.png\" class=\"cardSize\">";
         break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/10S.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/10S.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/10H.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/10H.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/10D.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/10D.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -254,19 +254,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/JC.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/JC.png\" class=\"cardSize\">";
         break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/JD.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/JD.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/JH.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/JH.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/JS.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/JS.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -278,19 +278,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/QS.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/QS.png\" class=\"cardSize\">";
         break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/QD.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/QD.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/QH.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/QH.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/QC.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/QC.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -302,19 +302,19 @@ function switchCard()
     switch (num1)
     {
         case 1:
-          document.getElementById("card").innerHTML="<img src=\"style7/KS.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/KS.png\" class=\"cardSize\">";
         break;
 
         case 2:
-          document.getElementById("card").innerHTML="<img src=\"style7/KC.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/KC.png\" class=\"cardSize\">";
         break;
 
         case 3:
-          document.getElementById("card").innerHTML="<img src=\"style7/KH.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/KH.png\" class=\"cardSize\">";
         break;
 
         case 4:
-          document.getElementById("card").innerHTML="<img src=\"style7/KD.png\" width=\"300\" height=\"500\">";
+          document.getElementById("card").innerHTML="<img src=\"assets/images/cards/KD.png\" class=\"cardSize\">";
         break;
 
         default: text="No such a value found"
@@ -324,6 +324,6 @@ function switchCard()
 
     default: text="No such a value found"
   }
-  
+
   return num;
 }

@@ -92,14 +92,22 @@ td {
     }
 
     .name-form {
-        /*vertical-align: middle;*/
+        /* vertical-align: middle; */
         /*align-items: center;*/
 
         margin-left: 40%;
     }
 
+.name-form{
+  padding: 0px 0px 0px 25px;
+
+}
+#name{
+  color: white;
+}
+
     #Registration {
-        padding: 200px 0px 0px 0px;
+        padding: 200px 0px 0px 20px;
         font-family: FrankRuehl;
         font-weight: 200;
         width: 400px;

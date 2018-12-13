@@ -62,7 +62,7 @@
 
         </div>
         <div class="col-12">
-          <div class=" name-form">
+          <div id="name" class=" name-form">
             Name:
           </div>
           <div class="name-form">
@@ -82,9 +82,9 @@
     <div class="container">
       <span class="text-white">
         You can find our game on :
-        <a href="https://www.facebook.com/HiLoChallenge/" target="_blank"><img class="image" id="fb-image" src="style4/facebook.png"> </a>
+        <a href="https://www.facebook.com/HiLoChallenge/" target="_blank"><img class="image" id="fb-image" src="assets/images/facebook.png"> </a>
         <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fhilochallenge2018%3Futm_source%3Dig_profile_share%26igshid%3D1mcrq3fnbqzdb%26fbclid%3DIwAR32aXgxAsofGBA5eHLetzEWB-WkVrZsv_QxxRjHItByDuVkJPD6H0dry7s&h=AT2zkhF4Bp9Au7M0vrrTwA09VOIsT1M-sLTn28m1MG8ojT37fnLDsfaFYtQjYPAf0pTfvnd37mkyaOikfkQgL1ML07YK4dPRCV8ZHGFPbgNRHnslvV0XltQpfH3ZOA3Jq9KF7w"
-          target="_blank"><img class="image" id="insta-image" src="style4/instagram.png"> </a>
+          target="_blank"><img class="image" id="insta-image" src="assets/images/instagram.png"> </a>
       </span>
     </div>
   </footer>
@@ -101,8 +101,8 @@
 
     function setname() {
       var name = document.getElementById("nameInput").value;
-      if (name.length > 10) {
-        alert("name is too long!");
+      if (name.length > 20) {
+        alert("Name is too long.Enter only 20 (symbols,letters,numbers) at all");
         return;
       }
       localStorage.setItem("lastname", name);
