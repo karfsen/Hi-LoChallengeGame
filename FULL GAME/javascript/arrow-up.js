@@ -12,6 +12,7 @@ if (card==num)
             text: "Try again!",
             icon: "warning",
             timer: 1250,
+            buttons: false,
         });
         setTimeout(changeCard, 1500);
     }
@@ -23,8 +24,8 @@ else if (card > num)
             text: "You've earned 1000$!",
             icon: "success",
             timer: 1250,
+            buttons: false,
         });
-        //win=1;
         setTimeout(changeCard, 1500);
         moneyInc(1);
     }
@@ -36,9 +37,9 @@ else if (card > num)
             text: "You've lost 1000$!",
             icon: "error",
             timer: 1250,
+            buttons: false,
         });
         setTimeout(changeCard, 1500);
-        //win=0;
         moneyInc(0);
     }
 checkLose();

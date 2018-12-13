@@ -9,9 +9,6 @@ function randomCardColor()
 
 }
 
-
-
-
 function randomPcCardColor()
 {
     let card1=Math.floor((Math.random() * 3) + 1);

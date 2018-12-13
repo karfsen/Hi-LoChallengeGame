@@ -9,6 +9,7 @@ function Down() {
           text: "Try again!",
           icon: "warning",
           timer: 1250,
+          buttons: false,
       });
     setTimeout(changeCard, 1500);
 
@@ -20,6 +21,7 @@ function Down() {
               text: "You've earned 1000$!",
               icon: "success",
               timer: 1250,
+              buttons: false,
           });
           setTimeout(changeCard, 1500);
           moneyInc(1);
@@ -32,6 +34,7 @@ function Down() {
               text: "You've lost 1000$!",
               icon: "error",
               timer: 1250,
+              buttons: false,
           });
           setTimeout(changeCard, 1500);
           moneyInc(0);
