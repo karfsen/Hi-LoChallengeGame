@@ -4,11 +4,11 @@ function Down() {
 
     if(num==card)
   {
-
       swal({
           title: "You're the lucky one !",
           text: "Try again!",
-          button: "^_^",
+          icon: "warning",
+          timer: 1250,
       });
     setTimeout(changeCard, 1500);
 
@@ -19,7 +19,7 @@ function Down() {
               title: "You win!",
               text: "You've earned 1000$!",
               icon: "success",
-              button: "Aww yiss!",
+              timer: 1250,
           });
           setTimeout(changeCard, 1500);
           moneyInc(1);
@@ -31,7 +31,7 @@ function Down() {
               title: "You lose!",
               text: "You've lost 1000$!",
               icon: "error",
-              button: "Aww nooo!",
+              timer: 1250,
           });
           setTimeout(changeCard, 1500);
           moneyInc(0);

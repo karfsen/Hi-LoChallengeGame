@@ -10,7 +10,8 @@ if (card==num)
         swal({
             title: "You're the lucky one !",
             text: "Try again!",
-            button: "^_^",
+            icon: "warning",
+            timer: 1250,
         });
         setTimeout(changeCard, 1500);
     }
@@ -21,7 +22,7 @@ else if (card > num)
             title: "You win!",
             text: "You've earned 1000$!",
             icon: "success",
-            button: "Aww yiss!",
+            timer: 1250,
         });
         //win=1;
         setTimeout(changeCard, 1500);
@@ -34,7 +35,7 @@ else if (card > num)
             title: "You lose!",
             text: "You've lost 1000$!",
             icon: "error",
-            button: "Aww nooo!",
+            timer: 1250,
         });
         setTimeout(changeCard, 1500);
         //win=0;
