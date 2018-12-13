@@ -5,22 +5,34 @@ function Down() {
     if(num==card)
   {
 
-    alert("YOU LUCKY TRY AGAIN");
+      swal({
+          title: "You're the lucky one !",
+          text: "Try again!",
+          button: "^_^",
+      });
     setTimeout(changeCard, 1500);
 
   }
    else if (num > card)
       {
-
-          alert("You win! Try to guess another one!");
+          swal({
+              title: "You win!",
+              text: "You've earned 1000$!",
+              icon: "success",
+              button: "Aww yiss!",
+          });
           setTimeout(changeCard, 1500);
           moneyInc(1);
       }
 
       else
       {
-
-          alert("You lose...");
+          swal({
+              title: "You lose!",
+              text: "You've lost 1000$!",
+              icon: "error",
+              button: "Aww nooo!",
+          });
           setTimeout(changeCard, 1500);
           moneyInc(0);
 
