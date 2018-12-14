@@ -91,7 +91,7 @@
 
   <script>
     if (typeof(Storage) !== "undefined") {
-      var name = localStorage.getItem("lastname")
+      let name = localStorage.getItem("lastname")
       if (name.length != 0) {
         document.getElementById("nameInput").placeholder = name;
       }
@@ -100,7 +100,7 @@
     }
 
     function setname() {
-      var name = document.getElementById("nameInput").value;
+      let name = document.getElementById("nameInput").value;
       if (name.length > 20) {
         alert("Name is too long.Enter only 20 (symbols,letters,numbers) at all");
         return;
@@ -112,8 +112,8 @@
   </script>
 
   <script>
-    var audioPlayer = document.getElementById("audioPlayer");
-    var speakerImage = document.getElementById("speakerImage");
+    let audioPlayer = document.getElementById("audioPlayer");
+    let speakerImage = document.getElementById("speakerImage");
 
     function togleMute() {
       if (audioPlayer.muted) {

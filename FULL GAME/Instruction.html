@@ -49,8 +49,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-pull-right">
-          <audio id="audioPlayer" autoplay hidden>
-            <source src="assets/audio/VegasMusic.mp3" type="audio/mp3">
+          <audio src="assets/audio/VegasMusic.mp3" autoplay hidden id="audioPlayer">
           </audio>
         </div>
       </div>
@@ -120,7 +119,7 @@
                 face-down in front of the player on the playing table, then another card for player face-up.
                 The rest cards, he sets aside while the player guesses the value.
                 After the cards are down, the player places his bet (bet is automatically set for one
-                hundred
+                thousand
                 dollars).
                 Player starts with budget of one thousand dollars. When the player guesses, he wins or loses
                 the pot
@@ -158,13 +157,13 @@
             </div>
             <div class="card-body bg-purple text-white">
               <div class="card-text">
-                This game ends If player will reach zero dollars he will be redictered to scoreboard where
+                This game ends If player will reach zero dollars his score will be redirected to scoreboard where
                 he can
                 check his game statistics.
                 Eventually there is a possibility of very good and lucky player, so for him there is a
                 possibility
                 of endlessness playing.
-                From the creators of this game. Have Fun
+                All from the creators of this game. Have Fun!
                 <table class="table table-hover table-dark">
                   <thead>
                     <tr>
@@ -266,8 +265,8 @@
 
 
   <script>
-    var audioPlayer = document.getElementById("audioPlayer");
-    var speakerImage = document.getElementById("speakerImage");
+    let audioPlayer = document.getElementById("audioPlayer");
+    let speakerImage = document.getElementById("speakerImage");
 
     function togleMute() {
       if (audioPlayer.muted) {
