@@ -1,3 +1,7 @@
+button{
+  outline: none;
+}
+
 .bg-purple {
     background: #300303;
     background-color: #300303 !important;
