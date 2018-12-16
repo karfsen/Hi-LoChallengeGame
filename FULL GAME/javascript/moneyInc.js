@@ -23,7 +23,18 @@ function moneyInc(arg) {
   }
   let sb = JSON.parse(storage.scoreboard); // vytvorime premennu sb teda slovnik, do ktorej vlozime JSON (ScoreBoard)
   // sb- slovnik zo scoreboard
-  sb[storage.lastname] = money; // do mena priradime peniaze
+  var storageNum = parseInt(sb[storage.lastname]);
+  var moneyNum = parseInt(money);
+  console.log("storage: " + storageNum);
+  console.log("actual: " + moneyNum);
+  console.log(!(parseInt(sb[storage.lastname], 10) > parseInt(money, 10)));
+
+  console.log("?: " + Number(storageNum) == Number(moneyNum));
+
+  if (!(parseInt(sb[storage.lastname], 10) > parseInt(money, 10))) {
+    sb[storage.lastname] = money; // do mena priradime peniaze
+  }
+  // sb[storage.lastname] = money; // do mena priradime peniaze
   storage.scoreboard = JSON.stringify(sb); //toto tu to zmeni na JSON text , a ked to bude vkladat do scoreboard storage
   document.getElementById("moneyLabel").innerHTML = money + "$"; // Martinova funkcia na vklad peniazi do cerveneho policka
 
