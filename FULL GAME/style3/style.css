@@ -36,7 +36,7 @@ td {
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1024px) {
     .outer {
         margin-left: auto;
         margin-right: auto;
@@ -125,7 +125,7 @@ td {
     display: table;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
     .outer {
         margin-left: auto;
         margin-right: auto;
