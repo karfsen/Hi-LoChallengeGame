@@ -42,6 +42,7 @@ else if (card > num)
         setTimeout(changeCard, 1500);
         moneyInc(0);
     }
+
 checkLose();
 num=card;
 

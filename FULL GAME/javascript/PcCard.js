@@ -375,13 +375,14 @@ function PcSwitchCard()
     }
     return card;
 }
+
 function changeCard() {
-    document.getElementById("card1").innerHTML="<img src=\"assets/images/card_back.jpg\" class=\"cardSize\">"
-    document.getElementById("card").innerHTML=img;
-}
-function twoBackCard(){
-
-    document.getElementById("card1").innerHTML="<img src=\"assets/images/card_back.jpg\" class=\"cardSize\">";
-    document.getElementById("card").innerHTML="<img src=\"assets/images/card_back.jpg\" class=\"cardSize\">";
-
+    if (gameOver === false) {
+        document.getElementById("card1").innerHTML = "<img src=\"assets/images/card_back.jpg\" class=\"cardSize\">"
+        document.getElementById("card").innerHTML = img;
+    }
+    else {
+        document.getElementById("card1").innerHTML = "<img src=\"assets/images/card_back.jpg\" class=\"cardSize\">"
+        document.getElementById("card").innerHTML = "<img src=\"assets/images/card_back.jpg\" class=\"cardSize\">"
+    }
 }

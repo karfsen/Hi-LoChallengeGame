@@ -39,9 +39,19 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <script>
-    window.onload = function () {
-            setTimeout(switchCard, 1000);
-        };
+
+      window.onload = function () {
+          if (gameOver === true) {
+              console.log("stop");
+          }
+          else {
+
+              console.log("gener");
+
+              setTimeout(switchCard, 1000);
+          }
+      };
+
     </script>
 
 
