@@ -41,7 +41,7 @@
         </div>
 
         <div class="mt-2 mt-md-0">
-          <img id="speakerImage" src="assets/images/speaker.png" onclick="togleMute()" class="mute-icon my-2 my-sm-0"></img>
+          <img id="speakerImage" src="assets/images/speaker.png" onclick="togleMute()" class="mute-icon my-2 my-sm-0">
         </div>
       </div>
     </nav>
@@ -91,7 +91,7 @@
 
   <script>
     if (typeof(Storage) !== "undefined") {
-      let name = localStorage.getItem("lastname")
+      var name = localStorage.getItem("lastname")
       if (name.length != 0) {
         document.getElementById("nameInput").placeholder = name;
       }
