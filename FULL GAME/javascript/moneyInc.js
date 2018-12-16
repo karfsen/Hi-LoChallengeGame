@@ -25,11 +25,11 @@ function moneyInc(arg) {
   // sb- slovnik zo scoreboard
   var storageNum = parseInt(sb[storage.lastname]);
   var moneyNum = parseInt(money);
-  console.log("storage: " + storageNum);
-  console.log("actual: " + moneyNum);
-  console.log(!(parseInt(sb[storage.lastname], 10) > parseInt(money, 10)));
+  // console.log("storage: " + storageNum);
+  // console.log("actual: " + moneyNum);
+  // console.log(!(parseInt(sb[storage.lastname], 10) > parseInt(money, 10)));
 
-  console.log("?: " + Number(storageNum) == Number(moneyNum));
+  // console.log("?: " + Number(storageNum) == Number(moneyNum));
 
   if (!(parseInt(sb[storage.lastname], 10) > parseInt(money, 10))) {
     sb[storage.lastname] = money; // do mena priradime peniaze

@@ -41,7 +41,7 @@
         </div>
 
         <div class="mt-2 mt-md-0">
-          <img id="speakerImage" src="assets/images/speaker.png" onclick="togleMute()" class="mute-icon my-2 my-sm-0">
+          <img id="speakerImage" src="assets/images/speaker.png" onclick="togleMute()" class="mute-icon my-2 my-sm-0"></img>
         </div>
       </div>
     </nav>
@@ -64,8 +64,8 @@
         <div class="col-12">
           <div id="name" class=" name-form">
             Name:<br>
-          <!-- </div> -->
-          <!-- <div class="nam  e-form"> -->
+            <!-- </div> -->
+            <!-- <div class="name-form"> -->
             <input id="nameInput" type="text" name="firstname" placeholder="Player 1">
           </div>
           <div class="outer">
@@ -92,7 +92,7 @@
   <script>
     storage = window.localStorage;
     if (typeof(Storage) !== "undefined") {
-      var name = localStorage.getItem("lastname")
+      let name = localStorage.getItem("lastname")
       if (name.length != 0) {
         document.getElementById("nameInput").placeholder = name;
       }
