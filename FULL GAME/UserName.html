@@ -90,6 +90,7 @@
   </footer>
 
   <script>
+    storage = window.localStorage;
     if (typeof(Storage) !== "undefined") {
       var name = localStorage.getItem("lastname")
       if (name.length != 0) {
@@ -100,7 +101,17 @@
     }
 
     function setname() {
+      var storage = window.localStorage;
       let name = document.getElementById("nameInput").value;
+      if (name == undefined || name.length == 0) {
+        var storageName = window.localStorage.lastname
+        if (storageName == undefined || storageName.length == 0) {
+          name = "Player";
+        } else {
+          name = window.localStorage.lastname;
+        }
+
+      }
       if (name.length > 20) {
         alert("Name is too long.Enter only 20 (symbols,letters,numbers) at all");
         return;

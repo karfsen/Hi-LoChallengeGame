@@ -40,7 +40,7 @@
 
   <script>
 
-      window.onload = function () {
+    window.onload = function () {
           if (gameOver === true) {
               console.log("stop");
           }
@@ -135,21 +135,30 @@
 
 
       <script>
+        var storage = window.localStorage;
+
         //let win;
+<<<<<<< HEAD
         let money = 2000;
         document.getElementById("moneyLabel").innerHTML = money +"$";
         let name = localStorage.lastname;
+=======
+        let money = 1000;
+        document.getElementById("moneyLabel").innerHTML = money + "$";
+        let name = storage.lastname;
+>>>>>>> c93af16acedadc990ad98b1dc31757df7197befb
         console.log(name);
         console.log(name.length);
-        if (name.length !== 0 && localStorage.lastname) {
+        if (name.length !== 0 && storage.lastname) {
           document.getElementById("nameBox").innerHTML = name;
         } else {
-          document.getElementById("nameBox").innerHTML = "Player"
+          document.getElementById("nameBox").innerHTML = "Player";
         }
       </script>
       <!--Made script by Saska and Roman-->
       <script>
         let x = document.getElementById("myAudio");
+
         function playAudio() {
           x.play();
         }
@@ -158,6 +167,7 @@
       <script>
         let audioPlayer = document.getElementById("audioPlayer");
         let speakerImage = document.getElementById("speakerImage");
+
         function togleMute() {
           if (audioPlayer.muted) {
             speakerImage.src = "assets/images/speaker.png";

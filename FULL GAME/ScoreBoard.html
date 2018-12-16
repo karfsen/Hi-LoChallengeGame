@@ -63,7 +63,11 @@
           <div class="card border-dark">
             <div class="card-body bg-purple text-white">
               <h5 class="card-title">Score board</h5>
+<<<<<<< HEAD
               <table id="scoraTable" class="table table-hover table-dark">
+=======
+              <table id="scoreTable" class="table table-hover table-dark">
+>>>>>>> c93af16acedadc990ad98b1dc31757df7197befb
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -72,6 +76,7 @@
                   </tr>
                 </thead>
                 <tbody>
+<<<<<<< HEAD
                   <tr>
                     <th scope="row">1</th>
                     <td></td>
@@ -87,6 +92,8 @@
                     <td></td>
                     <td></td>
                   </tr>
+=======
+>>>>>>> c93af16acedadc990ad98b1dc31757df7197befb
                 </tbody>
               </table>
             </div>
@@ -123,6 +130,30 @@
         speakerImage.src = "assets/images/mute.png";
         audioPlayer.muted = true;
       }
+    }
+// vkladanie do tabulky
+    let storage = window.localStorage; // odkazna pamat
+    if (!storage.scoreboard) { // pozerame sa ci je nieco zapisane v scoreboarde
+      storage.scoreboard = JSON.stringify({}); // vkladame prazdne okienko JSON
+    }
+    let sb = JSON.parse(storage.scoreboard); // s pamati vyberieme  JSON text, potom s JSON parse spravime obicajny JSON
+    // sb
+    let table = document.getElementById("scoreTable"); // pozeram sa na idcko a  ked ho najdem tak zapiseme do premennej s nazvom  tabulka
+
+    let index = 1; // premena pre index
+    for (name in sb) { // pre kade jedno meno v slovniku spravi prikazy:
+      let row = table.insertRow(index); //vlozime riadok do tabulky na pozicii index
+
+      let cell1 = row.insertCell(0); // do riadku vlozime stlpec
+      let cell2 = row.insertCell(1); //opakujeme
+      let cell3 = row.insertCell(2); //opakujeme
+
+      //  do stlpcov vlozime info ktore chceme aby sa zobrazovalo
+      cell1.innerHTML = index; //prva index
+      cell2.innerHTML = name; // druha bunka name
+      cell3.innerHTML = sb[name]; // 3 stlpec vkladame co penaze
+      index++;  // robime to pre dalsie mena
+
     }
   </script>
 
