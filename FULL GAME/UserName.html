@@ -101,7 +101,7 @@
     }
 
     function setname() {
-      var storage = window.localStorage;
+      let storage = window.localStorage;
       let name = document.getElementById("nameInput").value;
       if (name == undefined || name.length == 0) {
         var storageName = window.localStorage.lastname
