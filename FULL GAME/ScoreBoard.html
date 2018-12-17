@@ -109,7 +109,7 @@
         audioPlayer.muted = true;
       }
     }
-// vkladanie do tabulky
+    // vkladanie do tabulky
     let storage = window.localStorage; // odkazna pamat
     if (!storage.scoreboard) { // pozerame sa ci je nieco zapisane v scoreboarde
       storage.scoreboard = JSON.stringify({}); // vkladame prazdne okienko JSON
@@ -130,8 +130,29 @@
       cell1.innerHTML = index; //prva index
       cell2.innerHTML = name; // druha bunka name
       cell3.innerHTML = sb[name]; // 3 stlpec vkladame co penaze
-      index++;  // robime to pre dalsie mena
+      index++; // robime to pre dalsie mena
 
+    }
+    let rows, switching, i, x, y, shouldSwitch;
+    switching = true;
+
+    while (switching) {
+      switching = false;
+      rows = table.rows;
+
+      for (i = 1; i < (rows.length - 1); i++) {
+        shouldSwitch = false;
+        x = rows[i].getElementsByTagName("TD")[2];
+        y = rows[i + 1].getElementsByTagName("TD")[2];
+        if (x.innerHTML < y.innerHTML) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+      if (shouldSwitch) {
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+      }
     }
   </script>
 
